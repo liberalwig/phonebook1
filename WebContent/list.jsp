@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
 <%@ page import="java.util.List"%>
@@ -6,7 +6,7 @@
 <%@ page import="com.javaex.vo.PersonVo"%>
 
 <%
-PhoneDao phoneDao = new PhoneDao(); //여기에 있는 거 쓰면 스캐너 쓰듯 그냥 메커니즘 모르고 쓰는 건데 괜찮음
+PhoneDao phoneDao = new PhoneDao(); //여기에 있는 거 쓰면 스캐너 쓰듯 그냥 메커니즘 모르고 쓰는 건데 괜찮음.
 phoneDao.getPersonList();
 List<PersonVo> personList = new PersonVo();
 %>
@@ -59,13 +59,11 @@ List<PersonVo> personList = new PersonVo();
 
 	</table>
 	<br>
-	
-	<% 
-	}
-	%>
 
-	<a href = "https://localhost:8800/phonebook1/writeForm.jsp"	>리스트 바로 가기</a>
-	
+	<% } %>
+
+	<a href="./writeForm.jsp">리스트 바로 가기</a>
+
 </body>
 
 </html>
