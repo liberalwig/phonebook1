@@ -7,7 +7,7 @@
 	//파라미터 가져오기
 	int personId =  Integer.parseInt(request.getParameter("id"));
 
-	//PhonDao를 메모리에 올린다.
+	//PhonDao를 메모리에 올리기
 	PhoneDao phoneDao = new PhoneDao();
 	
 	//삭제
